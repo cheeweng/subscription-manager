@@ -1,0 +1,6 @@
+---
+- hosts: all
+  remote_user: root
+  tasks:
+  - name: subscribe to RHN
+    redhat_subscription: state=present username=chee_weng password=Chinyee@01 autosubscribe=true
